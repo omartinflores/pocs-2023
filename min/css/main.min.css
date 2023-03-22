@@ -1,0 +1,61 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'TelefonicaLight';
+  src: url('https://telefonicatech.com/public/fonts/telefonica/Light/Telefonica_Sans_Light.woff2') format('woff2'),
+  url('https://telefonicatech.com/public/fonts/telefonica/Light/Telefonica_Sans_Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TelefonicaExtraLight';
+  src: url('https://telefonicatech.com/public/fonts/telefonica/Thin/Telefonica_Sans_Thin.woff2') format('woff2'),
+  url('https://telefonicatech.com/public/fonts/telefonica/Thin/Telefonica_Sans_Thin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Telefonica';
+  src: url('https://telefonicatech.com/public/fonts/telefonica/Regular/Telefonica_Sans_Regular.woff2') format('woff2'),
+  url('https://telefonicatech.com/public/fonts/telefonica/Regular/Telefonica_Sans_Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TelefonicaBold';
+  src: url('https://telefonicatech.com/public/fonts/telefonica/Medium/Telefonica_Sans_Medium.woff2') format('woff2'),
+  url('./fonts/telefonica/Medium/Telefonica_Sans_Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TelefonicaItalic';
+  src: url('https://telefonicatech.com/public/fonts/telefonica/Italic/Telefonica_Sans_Italic.woff2') format('woff2'),
+  url('https://telefonicatech.com/public/fonts/telefonica/Italic/Telefonica_Sans_Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #FFF;
+  font-family: Telefonica;
+  margin: 0;
+  padding: 1px;
+}
+
+.masonry img {
+  width: 100%;
+  display: block;
+}

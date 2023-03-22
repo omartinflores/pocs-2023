@@ -1,0 +1,19 @@
+{
+    "name": "web-compiler",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "dev": "npm-run-all --parallel vite http-server",
+        "http-server": "http-server . -p 9000",
+        "vite": "vite build --watch"
+    },
+    "devDependencies": {
+        "npm-run-all": "^4.1.5",
+        "path": "^0.12.7",
+        "rollup-plugin-multi-entry": "^2.1.0",
+        "rollup-plugin-multi-input": "^1.3.1",
+        "sass": "^1.42.1",
+        "vite": "2.6.0",
+        "http-server": "^14.1.1"
+    }
+}
