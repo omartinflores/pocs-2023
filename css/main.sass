@@ -1,0 +1,61 @@
+@import fonts.css
+
+body
+    background-color: #FFF
+    font-family: Telefonica
+    margin: 0
+    padding: 1px
+    padding-top: 100px
+    
+.container
+    max-width: 80%
+    margin: auto
+header
+    width: 100%
+    height: 100px
+    position: fixed
+    top: 0px
+    background-color: #4c80f9
+    z-index: 10
+
+footer
+    width: 100%
+    height: 5000px
+    background-color: #c6962e
+
+.banner
+    width: 100%
+    height: 500px
+    background-color: #85c1bd
+    z-index: 1
+*
+
+    & > img
+        width: 100%
+        display: block
+.wrapper
+    z-index: -1
+    display: flex
+    grid-template-columns: repeat(4, 1fr)
+    align-items: flex-start
+    grid-auto-rows: 50px auto
+    .col-content
+        grid-column: 1 / 2
+        grid-row: 1 / 3
+        min-width: 50%
+        transition-delay: .4s
+        transition: all .1s
+    .col-sidebar
+        height: auto
+        .sidebar-top
+            transition: all .4s
+            margin-left: -100%
+        grid-column: 3 / 4
+        grid-row: 1
+        align-items: start
+        position: sticky
+        top: 100px
+
+
+
+

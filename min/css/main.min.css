@@ -1,0 +1,119 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'TelefonicaLight';
+  src: url('https://telefonicatech.com/public/fonts/telefonica/Light/Telefonica_Sans_Light.woff2') format('woff2'),
+  url('https://telefonicatech.com/public/fonts/telefonica/Light/Telefonica_Sans_Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TelefonicaExtraLight';
+  src: url('https://telefonicatech.com/public/fonts/telefonica/Thin/Telefonica_Sans_Thin.woff2') format('woff2'),
+  url('https://telefonicatech.com/public/fonts/telefonica/Thin/Telefonica_Sans_Thin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Telefonica';
+  src: url('https://telefonicatech.com/public/fonts/telefonica/Regular/Telefonica_Sans_Regular.woff2') format('woff2'),
+  url('https://telefonicatech.com/public/fonts/telefonica/Regular/Telefonica_Sans_Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TelefonicaBold';
+  src: url('https://telefonicatech.com/public/fonts/telefonica/Medium/Telefonica_Sans_Medium.woff2') format('woff2'),
+  url('./fonts/telefonica/Medium/Telefonica_Sans_Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TelefonicaItalic';
+  src: url('https://telefonicatech.com/public/fonts/telefonica/Italic/Telefonica_Sans_Italic.woff2') format('woff2'),
+  url('https://telefonicatech.com/public/fonts/telefonica/Italic/Telefonica_Sans_Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #FFF;
+  font-family: Telefonica;
+  margin: 0;
+  padding: 1px;
+  padding-top: 100px;
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0px;
+  background-color: #4c80f9;
+  z-index: 10;
+}
+
+footer {
+  width: 100%;
+  height: 5000px;
+  background-color: #c6962e;
+}
+
+.banner {
+  width: 100%;
+  height: 500px;
+  background-color: #85c1bd;
+  z-index: 1;
+}
+
+* > img {
+  width: 100%;
+  display: block;
+}
+
+.wrapper {
+  z-index: -1;
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: flex-start;
+  grid-auto-rows: 50px auto;
+}
+
+.wrapper .col-content {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  min-width: 50%;
+  transition-delay: 0.4s;
+  transition: all 0.1s;
+}
+
+.wrapper .col-sidebar {
+  height: auto;
+  grid-column: 3/4;
+  grid-row: 1;
+  align-items: start;
+  position: sticky;
+  top: 100px;
+}
+
+.wrapper .col-sidebar .sidebar-top {
+  transition: all 0.4s;
+  margin-left: -100%;
+}
